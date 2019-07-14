@@ -1,0 +1,29 @@
+ul {
+  list-style: none;
+}
+
+.menu li {
+  /* display: inline-block; */
+  background-color: white;
+  padding: 10px 15px;
+  transition: all 0.1s ease;
+  position: relative;
+}
+
+.menu li:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+
+#dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  left: 0;
+  /* top: 100%; */
+}
+
+#dropdown.active {
+  display: block;
+}
